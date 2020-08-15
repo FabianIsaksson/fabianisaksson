@@ -11,6 +11,8 @@
     "react-scripts": "3.4.3"
   },
   "scripts": {
+    "s3-deploy": "aws s3 sync /build s3://fabianisaksson",
+    "deploy": "npm npm run build && npm run s3-deploy",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
