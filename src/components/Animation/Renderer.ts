@@ -47,20 +47,16 @@ export function createAnimation(startingState = 1) {
       mesh.rotation.y += Math.PI / 180;
       mesh.rotation.z += Math.PI / 180;
 
-      console.log(mesh.position.x);
-
       if (mesh.position.x < 1 && [1, 0].includes(direction)) {
         const newPosition = mesh.position.x + 0.01;
         mesh.position.fromArray([newPosition, newPosition, 0]);
         if (newPosition >= 1) {
-          console.log('switching directions');
           direction = -1; // switch direction
         }
       } else if (direction === -1) {
         const newPosition = mesh.position.x - 0.01;
         mesh.position.fromArray([newPosition, newPosition, 0]);
         if (newPosition <= -1) {
-          console.log('switching directions');
           direction = 1;
         }
       }
