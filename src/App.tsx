@@ -8,8 +8,4 @@ const App = () => (
   </div>
 )
 
-const a = 1
-
-const n: string = a
-
 export default App

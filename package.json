@@ -28,7 +28,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "tsc --noEmit && eslint src && prettier src",
+    "lint": "tsc --noEmit && eslint ./src && prettier --write ./src",
     "start:production": "react-scripts build && serve -s build"
   },
   "browserslist": {
