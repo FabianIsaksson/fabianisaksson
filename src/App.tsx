@@ -6,6 +6,10 @@ const App = () => (
       </header>
     </div>
   </div>
-);
+)
 
-export default App;
+const a = 1
+
+const n: string = a
+
+export default App
