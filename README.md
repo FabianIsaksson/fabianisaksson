@@ -15,4 +15,6 @@ To set up yarn 2 run the snippets below in your terminal while standing in this 
 
 It should be really fast.
 
-## Analysis
+## IDE
+
+I use vscode and have the `.vscode` config checked in since it contains some setup to make vscodes typescript and eslint plugins work without node_modules.
