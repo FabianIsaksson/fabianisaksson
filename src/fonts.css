@@ -164,3 +164,112 @@
   font-weight: 900;
   font-style: italic;
 }
+
+/* Tiempos */
+@font-face {
+  font-family: 'TiemposHeadline';
+  src: local('TiemposHeadline')
+    url('./assets/fonts/TiemposHeadline/tiempos-headline-light.woff2')
+    format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TiemposHeadline';
+  src: local('TiemposHeadline')
+    url('./assets/fonts/TiemposHeadline/tiempos-headline-light-italic.woff2')
+    format('woff2');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'TiemposHeadline';
+  src: local('TiemposHeadline')
+    url('./assets/fonts/TiemposHeadline/tiempos-headline-regular.woff2')
+    format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TiemposHeadline';
+  src: local('TiemposHeadline')
+    url('./assets/fonts/TiemposHeadline/tiempos-headline-regular-italic.woff2')
+    format('woff2');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'TiemposHeadline';
+  src: local('TiemposHeadline')
+    url('./assets/fonts/TiemposHeadline/tiempos-headline-medium.woff2')
+    format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TiemposHeadline';
+  src: local('TiemposHeadline')
+    url('./assets/fonts/TiemposHeadline/tiempos-headline-medium-italic.woff2')
+    format('woff2');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'TiemposHeadline';
+  src: local('TiemposHeadline')
+    url('./assets/fonts/TiemposHeadline/tiempos-headline-semibold.woff2')
+    format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TiemposHeadline';
+  src: local('TiemposHeadline')
+    url('./assets/fonts/TiemposHeadline/tiempos-headline-semibold-italic.woff2')
+    format('woff2');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'TiemposHeadline';
+  src: local('TiemposHeadline')
+    url('./assets/fonts/TiemposHeadline/tiempos-headline-bold.woff2')
+    format('woff2');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TiemposHeadline';
+  src: local('TiemposHeadline')
+    url('./assets/fonts/TiemposHeadline/tiempos-headline-bold-italic.woff2')
+    format('woff2');
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'TiemposHeadline';
+  src: local('TiemposHeadline')
+    url('./assets/fonts/TiemposHeadline/tiempos-headline-black.woff2')
+    format('woff2');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TiemposHeadline';
+  src: local('TiemposHeadline')
+    url('./assets/fonts/TiemposHeadline/tiempos-headline-black-italic.woff2')
+    format('woff2');
+  font-weight: 900;
+  font-style: italic;
+}

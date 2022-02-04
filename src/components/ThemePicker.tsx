@@ -1,46 +1,40 @@
 import { Dispatch, SetStateAction } from 'react'
-import styled, { css } from 'styled-components'
-import sun from '../assets/png/sun.png'
-import moon from '../assets/png/moon.png'
+import styled from 'styled-components'
+
 import { THEME } from '../theme/theme'
 
 const Background = styled.div<{ mode: THEME }>`
   position: absolute;
+  cursor: pointer;
   bottom: 12px;
   right: 12px;
-  width: 36px;
-  height: 36px;
-  padding: 12px;
-  border-radius: 4px;
-
-  box-shadow: 2px 2px 2px #00000068;
-
+  width: 12px;
+  height: 48px;
+  padding: 4px;
+  border-radius: 1px;
   overflow: hidden;
 
-  transition: background 1s ease-in;
-  background: ${({ mode }) => (mode === THEME.LIGHT ? '#529ae7' : '#2e5988')};
+  transition: background 200ms ease-in-out;
+  background: ${({ theme }) => theme.color.contrast};
 `
 
-const ModeImage = styled.img<{ mode: THEME; show: boolean }>`
+const ModeImage = styled.div`
   position: absolute;
-  width: 36px;
-  height: 36px;
+  width: 12px;
+  height: 48px;
   cursor: pointer;
   user-select: none;
-  ${({ show, mode }) =>
-    show
-      ? css`
-          transform: rotate(0deg);
-          transform-origin: 24px -23px;
-          transition: all 1s ease;
-          opacity: 1;
-        `
-      : css`
-          transform: rotate(${mode === THEME.LIGHT ? '-180deg' : '180deg'});
-          transform-origin: 24px -23px;
-          transition: all 1s ease;
-          opacity: 0;
-        `}
+  background: ${({ theme }) => theme.color.main}; ;
+`
+
+const ModeSwitch = styled.div`
+  position: absolute;
+  width: 12px;
+  height: 24px;
+  cursor: pointer;
+  user-select: none;
+  transition: background 200ms ease-in-out;
+  background: ${({ theme }) => theme.color.contrast}; ;
 `
 
 export const ThemePicker = ({
@@ -53,18 +47,14 @@ export const ThemePicker = ({
   return (
     <Background mode={theme}>
       <ModeImage
-        mode={THEME.LIGHT}
-        show={theme === THEME.LIGHT}
-        onClick={() => setTheme(THEME.DARK)}
-        src={sun}
-        alt="sun"
+        onClick={() =>
+          theme === THEME.DARK ? setTheme(THEME.LIGHT) : setTheme(THEME.DARK)
+        }
       />
-      <ModeImage
-        mode={THEME.DARK}
-        show={theme === THEME.DARK}
-        onClick={() => setTheme(THEME.LIGHT)}
-        src={moon}
-        alt="moon"
+      <ModeSwitch
+        onClick={() =>
+          theme === THEME.DARK ? setTheme(THEME.LIGHT) : setTheme(THEME.DARK)
+        }
       />
     </Background>
   )

@@ -13,10 +13,10 @@ export enum THEME {
 export const lightTheme = {
   type: THEME.LIGHT,
   color: {
-    main: '#FFFFFF',
-    contrast: '#B09489',
-    constrastLight: '#C2EEF2',
-    accent: '#B3AAF2',
+    main: '#f9f9f9',
+    contrast: '#353535',
+    constrastLight: '#585858',
+    accent: '#ffb7b7',
     accentLight: '#746CA6',
   },
 }
@@ -24,10 +24,10 @@ export const lightTheme = {
 export const darkTheme = {
   type: THEME.DARK,
   color: {
-    main: '#071124',
-    contrast: '#FFFFFF',
-    constrastLight: '#F2DEB6',
-    accent: '#B3AAF2',
+    main: '#353535',
+    contrast: '#f9f9f9',
+    constrastLight: '#f1f1f1',
+    accent: '#ffb7b7',
     accentLight: '#746CA6',
   },
 }
