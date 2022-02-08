@@ -59,12 +59,31 @@ const GlobalStyle = createGlobalStyle`
 
     }
   }
+  
+  h3 {
+    font-family: 'Helvetica Neue';
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+    
+    @media screen and (min-width: 600px) {
+      font-size: 1.5rem;
+    }
+
+  }
+  li {
+    color: ${({ theme }) => theme.color.contrast};
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
 
 
   p {
     margin-top: 66px;
     color: #585858;
     font-family: 'Helvetica Neue';
+    color: ${({ theme }) => theme.color.constrastLight};
   }
 
 
