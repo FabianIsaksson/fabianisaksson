@@ -7,33 +7,33 @@ import GlobalStyle from './theme/GlobalStyle'
 import { lightTheme, darkTheme, THEME } from './theme/theme'
 
 const MainHeading = styled.h1`
-  animation: enter 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  animation: enter 500ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
   will-change: transform;
 
   @keyframes enter {
     0% {
       opacity: 0;
-      transform: translateX(-50%);
+      transform: translateY(50px);
     }
     100% {
       opacity: 1;
-      transform: translateX(0%);
+      transform: translateY(0);
     }
   }
 `
 
 const SecondHeading = styled.h2`
-  animation: enter 1.2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  animation: enter 700ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
   will-change: transform;
 
   @keyframes enter {
     0% {
       opacity: 0;
-      transform: translateX(-50%);
+      transform: translateY(20px);
     }
     100% {
       opacity: 1;
-      transform: translateX(0%);
+      transform: translateY(0);
     }
   }
 `
